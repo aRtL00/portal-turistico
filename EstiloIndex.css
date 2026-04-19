@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(135deg, #e7e7e7, #b8d3ff);
+    font-family: Arial, sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #64a8d8;
+    color: white;
+}
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a{
+    color:white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffd32a;
+}
+.hero {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: url(Imagens/Imagem\ fundo\ hero.PNG) no-repeat center/cover;
+
+    color: white;
+    text-align: center;
+}
+.hero {
+    position: relative;
+}
+.hero h1 {
+    font-size: 3rem;
+}
+.hero h1,
+.hero p {
+    position: relative;
+}
+
+.hero p {
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+}
+.destinos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px;
+}
+.card {
+    flex: 1 1 250px;
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+.card img {
+    width: 85%;
+    height: 400px;
+    object-fit: cover;
+}
+.card h3 {
+    margin-top: 10px;
+}
+
+.card p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    background: white;
+    margin: 30px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.sobre {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+    background: #ffffff;
+}
+.sobre-texto {
+    margin-bottom: 15px;
+}
+
+.sobre-extra {
+    padding: 10px;
+}
+.sobre h2 {
+    margin-bottom: 10px;
+}
+
+.sobre h3 {
+    margin-top: 15px;
+}
+
+.sobre p {
+    margin-top: 5px;
+    color: #555;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    background: #2e2e2e;
+    color: white;
+    padding: 25px;
+}
+
+
+
+
+.destino {
+    display: flex;
+    flex-direction: column;
+
+    margin: 30px;
+    padding: 20px;
+
+    background: white;
+    border-radius: 10px;
+}
+
+.destino img {
+    width: 100%;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+.destino iframe {
+    width: 100%;
+    height: 350px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+.destino p {
+    margin: 10px 0;
+}
+.destino {
+    border-bottom: 1px solid #ccc;
+}
+aside {
+    margin: 20px;
+    padding: 15px;
+    background: #f1f2f6;
+    border-radius: 8px;
+    text-align: center;
+}
+.destino h2 {
+    margin-bottom: 10px;
+}
+
+.pagina-destino main {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.destino img {
+    transition: 0.3s;
+}
+
+.destino img:hover {
+    transform: scale(1.01);
+}
+.destino {
+    transition: 0.3s;
+}
+
+.destino:hover {
+    transform: translateY(-5px);
+}
+.contatos{
+    background: url(Imagens/images.jpg) no-repeat center/cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin:auto;
+    font-size: 30px;
+}
+.contatos h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.contatos div{
+    margin-bottom: 20px;
+}
+.contatos::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+}
+.contatos *{
+    position: relative;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+}
+.contatos{
+    background: linear-gradient(rgba), rgba(255,255,255,0.5);
+    background: url(Imagens/images.jpg) no-repeat center/cover;
+}
+.contatos p{
+        margin-bottom: 30px;
+}
+.contatos input{
+    color: black;
+    margin-left: 60px;
+    border-radius: 8px;
+    border: 1px solid;
+}
+.botao{
+    font-size: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.aaa{
+    padding-bottom: 55px;
+    padding-left: 45px;
+        vertical-align: top;
+
+}
+.contatos div{
+    display: flex;
+    align-items: center;
+}
+.contatos label{
+    width: 55px;
+}
+textarea{
+    padding: 10px;
+    line-height: 1.2;
+}
+.gastronomia {
+    display: flex;
+    flex-direction: column;
+
+    margin: 30px;
+    padding: 20px;
+
+    background: white;
+    border-radius: 10px;
+}
+
+.gastronomia img {
+    width: 100%;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+.gastronomia iframe {
+    width: 100%;
+    height: 350px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+.gastronomia p {
+    margin: 10px 0;
+}
+.gastronomia {
+    border-bottom: 1px solid #ccc;
+}
+aside {
+    margin: 20px;
+    padding: 15px;
+    background: #f1f2f6;
+    border-radius: 8px;
+    text-align: center;
+}
+.gastronomia h2 {
+    margin-bottom: 10px;
+}
+
+.pagina-gastronoia main {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.gastronomia img {
+    transition: 0.3s;
+}
+
+.gastronomia img:hover {
+    transform: scale(1.01);
+}
+.gastronomia {
+    transition: 0.3s;
+}
+
+.gastronomia:hover {
+    transform: translateY(-5px);
+}
